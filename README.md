@@ -1,8 +1,14 @@
-# React + Vite
+	⁠Vücut kitle indeksini bir sayı olarak hesaplamak için kişinin ağırlığını ve boyunu kullanacak basit bir BMI (vücut kitle indeksi) hesaplayıcısı oluşturacağız.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nasıl oluşturacaksınız?
 
-Currently, two official plugins are available:
+⁠ Kullanıcılarımızın ağırlıklarını ve boylarını seçebilmelerini sağlamak için range input kullanacağız.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Vücut kitle indeksi, saklanan ağırlık ve boy değerlerine göre hesaplanır. Amacımız, vücut kitle indekslerinin çıktılarını, hangi değerlerin depolandığına ve weight,height state değişkenlerine göre anında hesaplamak olacaktır.
+
+Bunu yapmak için, bu iki değerden biri değiştiğinde bu değeri performanslı bir şekilde hesaplamak için React useMemo hook kullanacağız. ⁠
+
+Çalışacağınız React konseptleri
+
+⁠ • React'teki range input
+• useMemo (hesaplamaların performansını iyileştirmek için) ⁠
